@@ -1,19 +1,19 @@
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-  padding-bottom: 10px;
   color: #fff;
-  background-image: url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-7589.jpg);
+  background-image: url(../pics/bg.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
 
+.pull-right{
+	border-left: none;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
 .muted {
 	color: #a3a3a3;
-	opacity: 0.4;
+	opacity: 0.7;
 }
 
 .navbar-wrapper {
@@ -31,12 +31,6 @@ body {
   padding: 15px 20px;
 }
 
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
 .carousel {
   margin-bottom: 60px;
   border-top: solid 4px black;
@@ -48,14 +42,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.carousel-control {
-  background-color: transparent;
-  border: 0;
-  font-size: 120px;
-  margin-top: 0;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
 .carousel .item {
@@ -72,31 +58,23 @@ body {
   max-width: 550px;
   padding: 0 20px;
   margin-bottom: 100px;
-}
-.carousel-caption h1,
-.carousel-caption .lead {
-  margin: 0;
-  line-height: 1.25;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
-.carousel-caption .btn {
-  margin-top: 10px;
+  font-size: 16px;
 }
 
+.carousel-caption h1{
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .span4 {
+.marketing .col-md-4 {
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .span4 p {
+
+.marketing .col-md-4 p {
   margin-left: 10px;
   margin-right: 10px;
 }
