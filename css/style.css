@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Prime";
+    src: url("../fonts/prime.woff") format("woff");
+}
+@font-face {
+    font-family: "PrimeLight";
+    src: url("../fonts/primelight.woff") format("woff");
+}
+
 body {
   color: #fff;
   background-image: url(../pics/bg.jpg);
@@ -19,22 +28,36 @@ body {
 .navbar-wrapper {
   position: relative;
   z-index: 10;
-  margin-top: 20px;
 }
 
 .navbar-brand {
   font-size: 16px;
   font-weight: bold;
+  font-family: Prime;
 }
 
 .navbar .nav > li > a {
   padding: 15px 20px;
+  font-family: PrimeLight;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dropdown {
+	margin-right: 20px;
 }
 
 .carousel {
+  margin-top: 110px;
   margin-bottom: 60px;
   border-top: solid 4px black;
   border-bottom: solid 4px black;
+  
+  margin-left: 100px;
+  margin-right: 100px;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  
 }
 
 .carousel .container {
