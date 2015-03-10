@@ -9,7 +9,7 @@
 
 body {
   color: #fff;
-  background-image: url(../pics/bg.jpg);
+  background-image: url("../pics/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -34,6 +34,11 @@ body {
   font-size: 16px;
   font-weight: bold;
   font-family: Prime;
+  color: white !important; 
+}
+
+.navbar-brand:hover {
+  cursor: default;
 }
 
 .navbar .nav > li > a {
@@ -102,30 +107,27 @@ body {
   margin-right: 10px;
 }
 
-
-/* Featurettes
-------------------------- */
-
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-.featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
-}
-.featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin: 80px 0; 
 }
 
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette {
+  padding-top: 120px; 
+  overflow: hidden; 
+}
+
+.featurette-image {
+  margin-top: -120px; 
+}
+
 .featurette-image.pull-left {
   margin-right: 40px;
 }
+
 .featurette-image.pull-right {
   margin-left: 40px;
 }
 
-/* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
@@ -133,7 +135,32 @@ body {
   letter-spacing: -1px;
 }
 
+.gallery {
+	display: table;
+	margin-top: 10%;
+}
 
+.gallery .row {
+	display: table-row;
+	margin-bottom: 40px !important;
+}
+
+.gallery .row .thumbnail {
+	display: table-cell;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnail {
+	border: none;
+	background: none;
+}
+
+.space {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -203,7 +230,7 @@ body {
     font-size: 18px;
   }
 
-  .marketing .span4 + .span4 {
+  .marketing .col-md-4 + .col-md-4 {
     margin-top: 40px;
   }
 
