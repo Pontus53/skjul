@@ -187,6 +187,19 @@ body {
   top: 10px;
 }
 
+.spec {
+  width: 800px;
+  margin-top: 10%;
+  color: black;
+  font-weight: bold;
+}
+
+.tmrshed {
+  color: white;
+  font-family: Prime;
+  font-weight: bold;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
