@@ -12,6 +12,7 @@ body {
   background-image: url("../pics/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pull-right{
