@@ -16,6 +16,6 @@ function engelska() {
 		$("#F1").html('Robotic lawn mower. <span class="muted">Your lawn will take care of itself.</span>');
 		$("#F1D").html("Our shed has enough space for just your lawn mower. Let our shed take care of the charging and lawn mowing while you relax and enjoy the wonderful climate.");
 		$("#F2").html('Cylindrical storage. <span class="muted">A lot of space for your tools.</span>');
-		$("#F2D").html("With our smart storage solutions");
+		$("#F2D").html("With our smart storage solutions is space no longer a problem. All your tools and equipment will find its place in our shed.");
 	}
 }
