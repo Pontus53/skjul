@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/engelska.js"></script>
 	</HEAD>
 	<BODY>
 		<div class="container navbar-wrapper">
@@ -17,17 +18,17 @@
 				<a class="navbar-brand" href="#">TomorrowShed</a>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Hem</a></li>
-						<li><a href="om.html">Om oss</a></li>
-						<li><a href="kontakt.html">Kontakta oss</a></li>
+						<li class="active"><a id="H1" href="index.html">Hem</a></li>
+						<li><a id="H2" href="om.html">Om oss</a></li>
+						<li><a id="H3" href="kontakt.html">Kontakta oss</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#"><img class="img-responsive" src="pics/cog.png"></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Någon inställning</a></li>
-								<li><a href="#">Ehh, en annan inställning</a></li>
+								<li><a href="#">Svenska</a></li>
+								<li><a onclick="engelska()">Engelska</a></li>
 								<li class="divider"></li>
-								<li><a href="https://www.youtube.com/watch?v=unC93GfOZEA&list=RDunC93GfOZEA" target="_blank">Da Coco!</a></li>
+								<li><a href="https://www.youtube.com/watch?v=unC93GfOZEA&list=RDunC93GfOZEA" target="_blank">Löv with the Coco!</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -77,43 +78,43 @@
 			<div class="row">
 				<div class="col-md-4">
 					
-          			<h2>Bilder</h2>
-          			<p>Fler bilder av skjulet, insida och utsida.</p>
-          			<p><a class="btn btn-primary" href="bilder.html">Vidare &raquo;</a></p>
+          			<h2 id="L1">Bilder</h2>
+          			<p id="L1D">Fler bilder av skjulet, insida och utsida.</p>
+          			<p><a id="VIDARE1" class="btn btn-primary" href="bilder.html">Vidare &raquo;</a></p>
 				</div>
 				<div class="col-md-4">
 					
-          			<h2>Specifikationer</h2>
-          			<p>Lär dig allt du behöver veta om vårat trädgårdsskjul.</p>
-          			<p><a class="btn btn-primary" href="spec.html">Vidare &raquo;</a></p>
+          			<h2 id="L2">Specifikationer</h2>
+          			<p id="L2D">Lär dig allt du behöver veta om vårat trädgårdsskjul.</p>
+          			<p><a id="VIDARE2" class="btn btn-primary" href="spec.html">Vidare &raquo;</a></p>
 				</div>
 				<div class="col-md-4">
 					
-          			<h2>Pris</h2>
-          			<p>Vad kostar detta skjul?</p>
-          			<p><a class="btn btn-primary" href="pris.html">Vidare &raquo;</a></p>
+          			<h2 id="L3">Pris</h2>
+          			<p id="L3D">Vad kostar detta skjul?</p>
+          			<p><a id="VIDARE3" class="btn btn-primary" href="pris.html">Vidare &raquo;</a></p>
 				</div>
 			</div>
 
 		<hr class="featurette-divider">
 		<div class="featurette">
 			<img class="featurette-image pull-right img-circle" src="pics/gras.png">
-			<h2 class="featurette-heading">Robotgräsklippare. <span class="muted">Din gräsmatta har aldrig klippt sig själv så lätt.</span></h2>
-			<p class="lead">Vårat skjul har plats för just din robotgräsklippare. Låt skjulet sköta laddning och gräsklippande medan du tar det lugnt och njuter av vädret.</p>
+			<h2 id="F1" class="featurette-heading">Robotgräsklippare. <span class="muted">Din gräsmatta har aldrig klippt sig själv så lätt.</span></h2>
+			<p id="F1D" class="lead">Vårt skjul har plats för just din robotgräsklippare. Låt skjulet sköta laddning och gräsklippande medan du tar det lugnt och njuter av det underbara klimatet.</p>
 		</div>
 
 		<hr class="featurette-divider">
 		<div class="featurette">
 			<img class="featurette-image pull-left img-circle" src="pics/cylinder.png">
-			<h2 class="featurette-heading">Cylindrisk förvaring. <span class="muted">Massor med plats för dina verktyg.</span></h2>
-			<p class="lead">Med våra smarta förvaringslösningar är utrymme inte längre något problem. Alla dina verktyg och tillbehör får lätt plats någonstans bland alla förvaringsplatser.</p>
+			<h2 id="F2" class="featurette-heading">Cylindrisk förvaring. <span class="muted">Massor med plats för dina verktyg.</span></h2>
+			<p id="F2D" class="lead">Med våra smarta förvaringslösningar är utrymme inte längre något problem. Alla dina verktyg och tillbehör får lätt plats någonstans bland alla förvaringsplatser.</p>
 		</div>
 
 		<hr class="featurette-divider">
 		<div class="featurette">
 			<img class="featurette-image pull-right img-circle" src="pics/solpaneler.png">
-			<h2 class="featurette-heading">Solpaneler. <span class="muted">För en hållbar utveckling.</span></h2>
-			<p class="lead">Vi tänker på miljön och kommande generationers möjligheter att tillfredställa sina behov. Med våra smarta solpaneler behövs ingen annan strömförsörjning. Din robotgräsklippare kommer laddas med grön energi.</p>
+			<h2 id="F3" class="featurette-heading">Solpaneler. <span class="muted">För en hållbar utveckling.</span></h2>
+			<p id="F3D" class="lead">Vi tänker på miljön och kommande generationers möjligheter att tillfredställa sina behov. Med våra smarta solpaneler behövs ingen annan strömförsörjning. Din robotgräsklippare kommer laddas med grön energi.</p>
 		</div>
 		<hr class="featurette-divider">
 
