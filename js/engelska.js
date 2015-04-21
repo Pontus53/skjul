@@ -1,3 +1,20 @@
+$(document).ready(function () {
+	if (docCookies.hasItem("language")) {
+    	var languageSelected = docCookies.getItem("language");
+
+    	if (languageSelected = "english") {
+    		engelska();
+    	};
+    }
+
+    $("#english").click(function() {
+    	docCookies.setItem("language", "english", 2592000);
+    });
+    $("#svenska").click(function() {
+    	docCookies.setItem("language", "svenska", 2592000);
+    });
+});
+
 function engelska() {
 	if (document.title = "Hem &middot TomorrowShed") {
 		$("title").html("Home &middot TomorrowShed");
