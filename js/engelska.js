@@ -20,3 +20,4 @@ function engelska() {
 		$("#F3").html('Solar panels. <span class="muted">For a sustainable future.</span>');
 		$("#F3D").html("We think about the future and coming generations ability to sustain their needs. With our smart solar panels no other energy source is needed. Your robotic lawn mower will charge itself with green energy.");
 	}
+}
