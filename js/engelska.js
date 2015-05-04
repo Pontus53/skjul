@@ -1,9 +1,15 @@
 $(document).ready(function () {
+	var currentLocation = window.location.href;
+	console.log(currentLocation);
+
 	if (docCookies.hasItem("language")) {
     	var languageSelected = docCookies.getItem("language");
 
     	if (languageSelected = "english") {
     		engelska();
+    	};
+    	if (languageSelected = "svenska") {
+    		svenska();
     	};
     }
 
@@ -16,10 +22,10 @@ $(document).ready(function () {
 });
 
 function engelska() {
-	if (document.title = "Hem &middot TomorrowShed") {
+	if (currentLocation = "") {
 		$("title").html("Home &middot TomorrowShed");
 		$("#H1").html("Home");
-		$("#H2").html("About us");
+		$("#H2").html("Images");
 		$("#H3").html("Contact");
 		$("#VIDARE1").html("Continue &raquo");
 		$("#VIDARE2").html("Continue &raquo");
@@ -38,13 +44,27 @@ function engelska() {
 		$("#F3D").html("We think about the future and coming generations ability to sustain their needs. With our smart solar panels no other energy source is needed. Your robotic lawn mower will charge itself with green energy.");
 		$("#BACK").html("Return to the top");
 	}
+
+	if (currentLocation = "") {
+		$("title").html("Images &middot TomorrowShed");
+		$("#H1").html("Home");
+		$("#H2").html("Images");
+		$("#H3").html("Contact");
+	}
+	
+	if (currentLocation = "") {
+		$("title").html("Price &middot TomorrowShed");
+		$("#H1").html("Home");
+		$("#H2").html("Images");
+		$("#H3").html("Contact");
+	}
 }
 
 function svenska() {
-	if (document.title = "Home &middot TomorrowShed") {
+	if (currentLocation = "") {
 		$("title").html("Hem &middot TomorrowShed");
 		$("#H1").html("Hem");
-		$("#H2").html("Om oss");
+		$("#H2").html("Bilder");
 		$("#H3").html("Kontakta oss");
 		$("#VIDARE1").html("Vidare &raquo");
 		$("#VIDARE2").html("Vidare &raquo");
@@ -62,5 +82,19 @@ function svenska() {
 		$("#F3").html('Solpaneler. <span class="muted">För en hållbar utveckling.</span>');
 		$("#F3D").html("Vi tänker på miljön och kommande generationers möjligheter att tillfredställa sina behov. Med våra smarta solpaneler behövs ingen annan strömförsörjning. Din robotgräsklippare kommer laddas med grön energi.");
 		$("#BACK").html("Tillbaka upp");
+	}
+
+	if (currentLocation = "") {
+		$("title").html("Bilder &middot TomorrowShed");
+		$("#H1").html("Hem");
+		$("#H2").html("Bilder");
+		$("#H3").html("Kontakta oss");
+	}
+	
+	if (currentLocation = "") {
+		$("title").html("Pris &middot TomorrowShed");
+		$("#H1").html("Hem");
+		$("#H2").html("Bilder");
+		$("#H3").html("Kontakta oss");
 	}
 }
