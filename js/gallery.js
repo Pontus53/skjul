@@ -25,12 +25,12 @@ function popup_image() {
 		console.log(currentImg);
 
 		$(".popup").append('<img class="image" src="pics/' + currentImg + '.jpg">')
-		$(".gallery").fadeOut(500);
+		$(".gallery").fadeOut(0);
 		$(".popup").fadeIn(1000);
 	});
 
 	$("#xclose").click(function(event) {
-		$(".popup").fadeOut(1000);
+		$(".popup").fadeOut(0);
 		$(".gallery").fadeIn(500);
 		$(".image").remove();
 	});
