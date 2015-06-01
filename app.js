@@ -41,7 +41,7 @@ fs.readFile(filePath, function(error, content) {
             });
         }
         else {
-            response.writeHead(500);
+            response.writeHead(200);
             response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
             response.end(); 
         }
