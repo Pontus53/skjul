@@ -24,7 +24,7 @@ function popup_image() {
 		currentImg = $(this).attr('id');
 		console.log(currentImg);
 
-		$(".popup").append('<img class="image" src="pics/' + currentImg + '.jpg">')
+		$(".popup").append('<img class="image" src="pics/' + currentImg + '.png">')
 		$(".gallery").fadeOut(0);
 		$(".popup").fadeIn(1000);
 	});
